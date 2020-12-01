@@ -66,7 +66,7 @@ body {
 .template-text {
     font-size: 8px;
     line-height: 8px;
-    background: url(./img/main\ \(1\).png);
+    background: url(./img/main-image.png);
     background-attachment: fixed;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
