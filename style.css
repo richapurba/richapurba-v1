@@ -7,12 +7,8 @@ body {
     min-height: 100vh;
     background: rgb(3, 3, 3);
 }
-nav {
-    background: #6ba5c7;
-    box-shadow: 0 10px 30px rgba(0,0,0,.3);
-}
 ul {
-    background: #6ba5c7;
+    background: #44444496;
     width: 100%;
     position: absolute;
     left: 0;
