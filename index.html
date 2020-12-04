@@ -17,17 +17,7 @@
     </head>
     <body>
         <!--Moveable menu-->
-        <nav>
-            <input type="checkbox" id="click">
-            <div class="main-nav">
-                <label for="click">Menu</label>
-                <a href="./index.html"><span class="fa fa-home">Home</span></a>
-                <a href="./about.html"><span class="fa fa-user-circle-o">About</span></a>
-                <a href="./work.html"><span class="fa fa-briefcase">Works</span></a>
-                <a href="./info.html"><span class="fa fa-comments-o">Contact</span></a>
-                <a href="./icha.pdf"><span class="fa fa-file-pdf-o">Resume</span></a>
-            </div>
-        </nav>
+        
         
 
         <section class="main-img" style="background:  rgb(3, 3, 3);">
@@ -188,6 +178,25 @@
 
             </p>
         </section>
-        <div id="richa"></div>
+        <!--Contact form-->
+        <section class="contact">
+            <div id="wrap">
+                <h2>SEND A MESSAGE</h2>
+                <br><br><br>
+                <div id="form-wrap">
+                    <form>
+                        <p class="hello">Hello, Richa.</p>
+                        <label for="email">Your message:</label>
+                        <textarea name="message" id="message" value="Your message"></textarea>
+                        <p class="end">Sincerely,</p>
+                        <label for="name">Your name:</label>
+                        <input type="text" name="name" value="" id="name">
+                        <label for="email">Your email:</label>
+                        <input type="text" name="email" value="" id="email">
+                        <input type="submit" name="submit" value="SEND BY ME, THANKS!">
+                    </form>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
