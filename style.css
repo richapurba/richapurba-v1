@@ -11,31 +11,13 @@ body {
     align-items: center;
     min-height: 100vh;
 }
-/*ul {
-    background: #44444496;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 0;
-    padding: 15px 0;
-    display: flex;
-    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+.navigation {
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    
 }
-.main-nav {
-    list-style: none;
-    text-align: center;
-    display: block;
-    border-right: 2px solid rgba(2, 2, 2, 0.2);
-}
-.main-nav:last-child {
-    border-right: none;
-}
-.main-nav a {
-    text-decoration: none;
-    padding: 0 50px;
-    display: block;
-}*/
+
 
 
 
