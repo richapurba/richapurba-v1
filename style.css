@@ -11,6 +11,7 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: 'Noto Sans JP', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /*Navigation*/
@@ -79,6 +80,63 @@ ul li:hover {text-decoration: underline;}
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
+/*About me*/
+.about-card {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #d41e31, #491f8f);
+}
+.about-card img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 400px;
+    transition: .5s;
+}
+.about-card:hover img {
+    left: 80%;
+    height: 500px;
+}
+.about-card .about-content {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.about-card:hover .about-content {
+    opacity: 1;
+    visibility: visible;
+    left: 0%;
+}
+.about-card .about-content h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+.about-card .about-content p {
+    color: #fff;
+}
+.about-card .about-content a {
+    position: relative;
+    display: inline-block;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    margin-top: 10px;
+    text-decoration: none;
+}
 
 
 
@@ -310,4 +368,48 @@ input[type=text]:focus {
     color: rgba(255, 255, 255, 0.5);
     z-index: 1;
     transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsive about me card*/
+@media (max-width: 991px) {
+    .about-card {
+        position: relative;
+        width: auto;
+        max-width: 600px;
+        transition: .5s;
+        align-self: flex-start;
+    }
+    .about-card:hover {
+        height: 600px;
+    }
+    .about-card:hover img {
+        left: 50%;
+        height: 350px;
+    }
+    .about-card .about-content {
+        width: 100%;
+        left: 0;
+        padding: 40px;
+        opacity: 0;
+    }
+}
+@media (max-width: 420px) {
+    .about-card .about-content {
+        padding: 30px;
+    }
+    .about-card:hover img {
+        height: 300px;
+    }
 }
