@@ -1,3 +1,21 @@
+//site notification
+function sendNotification(title, text, icon) {
+  if (Notification.permission === "granted") {
+      createNotification(title, text, icon);
+  }
+  else {
+      Notification.requestPermission(permission => {
+          if (permission === "granted")
+              createNotification(title, text, icon);
+      });}}
+
+//notification object
+function createNotification(title, text, icon) {
+  const notification = new Notification(title, {body: text, icon});}
+  
+//call send notification
+sendNotification('Please click all over the site to see the magic. Thanks!', 'Richa Purba', 'ica/cha.jpg');
+
 //Changing background color
 $('body').click(function(){
   $('body').css('background', '#' + bgColor());
