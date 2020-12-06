@@ -1,3 +1,12 @@
+//Changing background color
+$('body').click(function(){
+  $('body').css('background', '#' + bgColor());
+});
+function bgColor() {
+  return Math.floor(Math.random()*16777216).toString(16);
+}
+
+//Bubbles effect
 var w = window.innerWidth,
     h = window.innerHeight,
     canvas = document.getElementById('bubble'),
