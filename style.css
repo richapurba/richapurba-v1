@@ -54,7 +54,7 @@ ul li:hover {text-decoration: underline;}
     position: fixed;
     display: none;
     z-index: 1;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .2);
 }
 .gap{
     color: white;
@@ -81,6 +81,11 @@ ul li:hover {text-decoration: underline;}
 }
 
 /*About me*/
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .about-card {
     position: relative;
     width: 600px;
@@ -90,7 +95,8 @@ ul li:hover {text-decoration: underline;}
     justify-content: flex-start;
     align-items: center;
     border-radius: 20px;
-    background: linear-gradient(135deg, #d41e31, #491f8f);
+    background: linear-gradient(135deg, #bdf8f0, rgb(0, 97, 161));
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #fff);
 }
 .about-card img {
     position: absolute;
@@ -99,6 +105,7 @@ ul li:hover {text-decoration: underline;}
     transform: translateX(-50%);
     height: 400px;
     transition: .5s;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #fff);
 }
 .about-card:hover img {
     left: 80%;
@@ -285,7 +292,7 @@ input[type=text]:focus {
     margin: 50px 0;
     background: rgb(1, 65, 255);
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    box-shadow: rgba(0,0,0,.2) 3px 2.5px 0.8px;;
+    box-shadow: rgba(0,0,0,.2) 3px 2.5px 0.8px;
 }
 .process {
     display: flex;
