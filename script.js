@@ -24,6 +24,15 @@ function bgColor() {
   return Math.floor(Math.random()*16777216).toString(16);
 }
 
+//Active navbar
+$(document).ready(function() {
+  $('li').on('click', function() {
+    $(this).siblings().removeClass('active');
+    $(this).addClass('active');
+  })
+})
+
+
 //Bubbles effect
 var w = window.innerWidth,
     h = window.innerHeight,
