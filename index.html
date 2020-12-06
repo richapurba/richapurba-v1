@@ -16,7 +16,23 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
     <body>
-        <!--Moveable menu-->
+        <!--Navigation-->
+        <nav role='navigation' id="mainnav">
+            <br><br><br>
+          <ul class="gap">
+            <li class="active"><a href="./index.html">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#project">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="./icha.pdf">RESUME</a></li>
+          </ul>
+        </nav>  
+        
+        <div class="hamb">
+          <a href="#"><i class="fa fa-bars"></i></a>
+        </div>
+        
+        <canvas id="bubble"></canvas>
         
         
 
@@ -173,7 +189,7 @@
 
 
         <!--Contact form-->
-        <section class="contact">
+        <section class="contact" id="contact">
             <div id="wrap">
                 <h2>SEND A MESSAGE</h2>
                 <br><br><br>
@@ -192,5 +208,8 @@
                 </div>
             </div>
         </section>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+        <script src="./script.js"></script>
     </body>
 </html>
