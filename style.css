@@ -175,7 +175,7 @@ ul li:hover {text-decoration: underline;}
     background: rgb(87, 88, 88);
     padding: 20px;
     display: grid;
-    font-size: 20px;
+    font-size: 16px;
     place-items: center;
     text-align: center;
     color: #fff;
@@ -186,7 +186,26 @@ ul li:hover {text-decoration: underline;}
 }
 .container .project-box img {
     position: relative;
+    max-width: 100px;
+    margin-bottom: 10px;
 }
+.container .project-box:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.container .project-box:nth-child(2) {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.container .project-box:nth-child(4) {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.container .project-box:nth-child(5) {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
 
 
 /*Contact form*/
@@ -460,5 +479,17 @@ input[type=text]:focus {
     }
     .about-card:hover img {
         height: 300px;
+    }
+}
+
+/*Responsive project section*/
+@media (max-width: 991px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+        grid-template-rows: minmax(auto, auto);
+    }
+    .container .project-box {
+        grid-column: unset !important;
+        grid-row: unset !important;
     }
 }
