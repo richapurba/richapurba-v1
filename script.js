@@ -24,6 +24,13 @@ function bgColor() {
   return Math.floor(Math.random()*16777216).toString(16);
 }
 
+//Loader
+var loader = document.querySelector(".loader");
+window.addEventListener("load", gone);
+function gone() {
+  loader.classList.add("gone");
+}
+
 //Active navbar
 $(document).ready(function() {
   $('li').on('click', function() {

@@ -17,8 +17,27 @@ body {
 
 
 /*Loader*/
-
-
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gone {
+    animation: gone 1s forwards;
+}
+@keyframes gone {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
 
 
 /*Navigation*/
