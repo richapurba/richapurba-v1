@@ -14,6 +14,8 @@ body {
     scroll-behavior: smooth;
 }
 
+
+
 /*Loader*/
 
 
@@ -150,7 +152,35 @@ ul li:hover {text-decoration: underline;}
     text-decoration: none;
 }
 
-
+/*Projects*/
+.projects {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+}
+.container img {
+    width: 100px;
+}
+.container .project-box {
+    background: rgb(87, 88, 88);
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    color: #fff;
+    transition: .5s;
+}
 
 /*Contact form*/
 .contact,
