@@ -181,6 +181,13 @@ ul li:hover {text-decoration: underline;}
     color: #fff;
     transition: .5s;
 }
+.container .project-box:hover {
+    background: rgb(0, 97, 161);
+}
+.container .project-box img {
+    position: relative;
+}
+
 
 /*Contact form*/
 .contact,
