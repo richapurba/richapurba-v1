@@ -34,6 +34,7 @@ h2:after {
     margin: 0 auto;
     width: 55%; /* Width of the border bottom. */
     padding-top: 20px; /* This creates some space between the element and the border. */
+    margin-bottom: 60px;
     border-bottom: 3px solid #032949;
 }
 p {color: rgb(194, 194, 194);}
