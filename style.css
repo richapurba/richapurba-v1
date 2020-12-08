@@ -28,6 +28,7 @@ h2 {
     color: transparent;
     text-shadow: rgba(245, 245, 245, 0.5) 2px 2.5px 2.5px;
 }
+#name:after,
 h2:after {
     content: "";
     display: block;
@@ -91,7 +92,7 @@ h3 {
     z-index: 1;
 }
 #mainnav li {
-    margin: 55px 0;
+    margin: 45px 0;
     left: -550px;
     position: relative;
     display: none;
@@ -399,11 +400,66 @@ input[type=text]:focus {
 
 /*Footer*/
 footer {
-    background: rgb(87, 88, 88);
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
 }
-footer img {
-    width: 100px;
+footer a {text-decoration: none;}
+footer #name {
+    font-size: 32px;
 }
+footer .end {font-size: 16px;}
+footer .end:after {border-bottom: none;}
+.end {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+footer .icons {
+    display: flex;
+    height: 55px;
+    width: 55px;
+    margin: 0 15px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, .15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: transform 0.5s;
+}
+.icons i {
+    font-size: 35px;
+    color: #777;
+    transition: transform 0.5s;
+}
+.icons:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, .2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, .01);
+    transform: translateY(2px);
+}
+.icons:hover i {transform: scale(0.90);}
+.icons:hover .fa-github {color: #000000;}
+.icons:hover .fa-linkedin {color: #050781;}
+.icons:hover .fa-google {color: #bb6708;}
+.icons:hover .fa-telegram {color: #1a9ebe;}
+.icons:hover .fa-instagram {color: #dd1043;}
+.icons:hover .fa-facebook {color: #130fe9;}
+
 
 /*about.html*/
 
