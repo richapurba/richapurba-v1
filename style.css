@@ -49,7 +49,7 @@ h2:after {
     color: transparent;
     text-shadow:rgba(0, 0, 0, 0.247) 7px 3.5px 1px;
 }
-p {color: rgb(194, 194, 194);}
+p {color: #fff;}
 h3 {
     font-size: 30px;
     color: rgb(32, 32, 32);
@@ -285,7 +285,7 @@ ul li:hover {text-decoration: underline;}
 h2, form,
 fieldset, input,
 textarea, footer,
-.hello, .end {
+.hello {
     margin: 0;
     padding: 0;
     border: 0;
@@ -295,7 +295,8 @@ textarea, footer,
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.hello, .end {
+.hello {
+    color: rgb(156, 156, 156);
     font-size: 24px;
 }
 #wrap {
@@ -396,8 +397,13 @@ input[type=text]:focus {
     transition: opacity 0.5s ease-in-out 1.3s;
 }
 
-
-
+/*Footer*/
+footer {
+    background: rgb(87, 88, 88);
+}
+footer img {
+    width: 100px;
+}
 
 /*about.html*/
 
