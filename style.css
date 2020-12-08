@@ -216,9 +216,11 @@ ul li:hover {text-decoration: underline;}
     background: #fff;
     margin-top: 30px;
     text-decoration: none;
+    transition: .5s;
 }
 .about-card .about-content a:hover {
-    padding: 20px 30px;
+    padding: 15px 25px;
+    font-size: 18px;
 }
 
 /*Projects*/
