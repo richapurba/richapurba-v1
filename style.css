@@ -37,6 +37,18 @@ h2:after {
     margin-bottom: 60px;
     border-bottom: 3px solid #032949;
 }
+.engraved {
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-size: 2em;
+    background-color: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow:rgba(0, 0, 0, 0.247) 7px 3.5px 1px;
+}
 p {color: rgb(194, 194, 194);}
 h3 {
     font-size: 30px;
@@ -63,7 +75,7 @@ h3 {
     align-items: center;
 }
 .gone {
-    animation: gone 1s forwards;
+    animation: gone 2s forwards;
 }
 @keyframes gone {
     100% {
@@ -134,6 +146,8 @@ ul li:hover {text-decoration: underline;}
     font-size: 25px;
     line-height: 5px;
     background: url(./img/2.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
@@ -200,8 +214,11 @@ ul li:hover {text-decoration: underline;}
     padding: 10px 20px;
     border-radius: 10px;
     background: #fff;
-    margin-top: 10px;
+    margin-top: 30px;
     text-decoration: none;
+}
+.about-card .about-content a:hover {
+    padding: 20px 30px;
 }
 
 /*Projects*/
@@ -384,18 +401,6 @@ input[type=text]:focus {
 
 
 /*Development Process*/
-.engraved {
-    margin: 0;
-    padding: 0;
-    font-weight: 800;
-    font-size: 5em;
-    background-color: rgb(255, 255, 255);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow:rgba(0, 0, 0, 0.123) 7px 3.5px 1px;
-}
 .heading {
     margin: 50px 0;
     background: rgb(1, 65, 255);
