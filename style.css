@@ -555,12 +555,16 @@ footer .icons {
 }
 .content .skill ol {
     list-style: none;
+    display: flex;
 }
 ol img {
     width: 40px;
     height: 40px;
 }
 ol p {font-size: 13px;}
+ol li {
+    margin: 0 10px;
+}
 ol li:nth-child(1) {
     left: 0;
 }
