@@ -553,8 +553,17 @@ footer .icons {
     z-index: 1;
     transition: 0.5s;
 }
-
-
+.content .skill ol {
+    list-style: none;
+}
+ol img {
+    width: 40px;
+    height: 40px;
+}
+ol p {font-size: 13px;}
+ol li:nth-child(1) {
+    left: 0;
+}
 
 
 
