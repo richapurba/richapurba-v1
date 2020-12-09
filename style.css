@@ -443,6 +443,13 @@ footer .icons {
     color: #777;
     transition: transform 0.5s;
 }
+.icons img {
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s;
+}
 .icons:hover {
     box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, .2),
                 inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
@@ -556,6 +563,8 @@ footer .icons {
 .content .skill ol {
     list-style: none;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 ol img {
     width: 40px;
@@ -563,10 +572,7 @@ ol img {
 }
 ol p {font-size: 13px;}
 ol li {
-    margin: 0 10px;
-}
-ol li:nth-child(1) {
-    left: 0;
+    margin: 0 15px;
 }
 
 
