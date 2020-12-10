@@ -16,6 +16,13 @@ function createNotification(title, text, icon) {
 //call send notification
 sendNotification('Please click all over the site to see the magic. Thanks!', 'Richa Purba', 'ica/cha.jpg');
 
+//notification object
+function createNotification(title, text, icon) {
+  const notification = new Notification(title, {body: text, icon});}
+  
+//call send notification
+sendNotification('To see the projects, please click on the image. Thanks!', 'Richa Purba', 'ica/cha.jpg');
+
 //Changing background color
 $('body').click(function(){
   $('body').css('background', '#' + bgColor());
@@ -147,6 +154,3 @@ $(document)
         .fadeIn();
     });
   })
-
-//about.html
-
